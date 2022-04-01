@@ -1,0 +1,994 @@
+/*
+summary
+
+    1. Default page csses
+    2. LOGO
+    3. TRAVEL BUTTONS
+    4. SELECT ROUTES
+    5. CHANGE STATIONS
+    6. DATE
+    7. TICKET BUTTON
+    8. SEARCH
+    9. TICKETS
+    10. Back Button
+    11. ALERT
+    12. Dropdown
+
+/summary
+*/
+
+
+
+
+/* ----- 1. Default page csses ----- /////////////////////////////////////////////////*/
+.main-logo {
+    display: block;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    font-synthesis: none;
+    overflow: scroll;
+    font-family: 'Nexa';
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --east-primary: #32c8f4;
+    --east-success: #63be0d;
+    --east-service: #ffd900;
+    --east-warning: #ff5100;
+    --east-danger: #ff0000;
+    --east-metalWhite: #f9f9f9;
+    --east-white: #ffffff;
+    --east-black: #000000;
+    --east-passive: #9b9b9b;
+    --east-darkpassive: #303030;
+    --ob-red: #ff1919;
+    --ob-red-secondary: #d23b38;
+    --ob-red-primary: #db0e0b;
+    --ob-red-thirty: #ff322e;
+    --ob-red-passive: #ff6666;
+    --ob-white: #ffffff;
+    --ob-white-secondary: #ffe9e9;
+    --ob-white-primary: #ececec;
+}
+
+.container {
+    padding: 4px;
+    margin: 0px;
+    height: 99vh;
+    max-width: 535px;
+    margin: auto;
+}
+
+.theme-red {
+    background: rgba(210, 59, 56, 1);
+    background: -moz-linear-gradient(-45deg, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(210, 59, 56, 1)), color-stop(100%, rgba(255, 31, 53, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    background: linear-gradient(135deg, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d23b38', endColorstr='#ff1f35', GradientType=1);
+    color: var(--ob-white);
+}
+
+.theme-red-line-white {
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(210, 59, 56, 1) 15%, rgba(255, 31, 53, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(15%, rgba(255, 255, 255, 1)), color-stop(15%, rgba(210, 59, 56, 1)), color-stop(100%, rgba(255, 31, 53, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(210, 59, 56, 1) 15%, rgba(255, 31, 53, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(210, 59, 56, 1) 15%, rgba(255, 31, 53, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(210, 59, 56, 1) 15%, rgba(255, 31, 53, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(210, 59, 56, 1) 15%, rgba(255, 31, 53, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ff1f35', GradientType=0);
+    color: var(--ob-white);
+}
+
+.theme-red-line-white-secondary {
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(210, 59, 56, 1) 30%, rgba(255, 31, 53, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(30%, rgba(255, 255, 255, 1)), color-stop(30%, rgba(210, 59, 56, 1)), color-stop(100%, rgba(255, 31, 53, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(210, 59, 56, 1) 30%, rgba(255, 31, 53, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(210, 59, 56, 1) 30%, rgba(255, 31, 53, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(210, 59, 56, 1) 30%, rgba(255, 31, 53, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(210, 59, 56, 1) 30%, rgba(255, 31, 53, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ff1f35', GradientType=0);
+    color: var(--ob-white);
+}
+
+.theme-white-line-red {
+    background: rgba(210, 59, 56, 1);
+    background: -moz-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 25, 25, 1) 15%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(210, 59, 56, 1)), color-stop(15%, rgba(255, 25, 25, 1)), color-stop(15%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 25, 25, 1) 15%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 25, 25, 1) 15%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 25, 25, 1) 15%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(210, 59, 56, 1) 0%, rgba(255, 25, 25, 1) 15%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d23b38', endColorstr='#ffffff', GradientType=0);
+    color: var(--ob-red);
+}
+
+.theme-white-line-red-secondary {
+    background: rgba(210, 59, 56, 1);
+    background: -moz-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 59, 56, 1) 30%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(210, 59, 56, 1)), color-stop(30%, rgba(255, 59, 56, 1)), color-stop(30%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 59, 56, 1) 30%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 59, 56, 1) 30%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 59, 56, 1) 30%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(210, 59, 56, 1) 0%, rgba(255, 59, 56, 1) 30%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d23b38', endColorstr='#ffffff', GradientType=0);
+    color: var(--ob-red);
+}
+
+.theme-white-line-red-primary {
+    background: rgba(210, 59, 56, 1);
+    background: -moz-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 25, 25, 1) 11%, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(210, 59, 56, 1)), color-stop(11%, rgba(255, 25, 25, 1)), color-stop(11%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 25, 25, 1) 11%, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 25, 25, 1) 11%, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 25, 25, 1) 11%, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(210, 59, 56, 1) 0%, rgba(255, 25, 25, 1) 11%, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d23b38', endColorstr='#ffffff', GradientType=0);
+    color: var(--ob-red);
+    background-repeat: no-repeat;
+}
+
+.theme-white {
+    background: var(--ob-white);
+    color: var(--ob-red);
+}
+
+.loading-screen {
+    z-index: 99999;
+    padding: 4px;
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(210, 59, 56, 1);
+    background: -moz-linear-gradient(-45deg, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(210, 59, 56, 1)), color-stop(100%, rgba(255, 31, 53, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    background: linear-gradient(135deg, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d23b38', endColorstr='#ff1f35', GradientType=1);
+}
+
+
+/* ----- 2. LOGO ----- /////////////////////////////////////////////////*/
+
+.main-logo img {
+    -webkit-font-smoothing: antialiased;
+    margin: auto auto;
+    width: 40%;
+}
+
+.theme-red .logo-red {
+    display: block;
+}
+
+.theme-red .logo-white {
+    display: flex;
+}
+
+.theme-white .logo-white {
+    display: block;
+}
+
+.theme-white .logo-red {
+    display: flex;
+}
+
+.logo-top {
+    padding-top: 20px;
+    display: flex;
+}
+
+.logo-center {
+    height: 80vh;
+    display: flex;
+}
+
+.theme-white-line-red-primary .logo-red,
+.theme-white-line-red .logo-red,
+.theme-white-line-red .logo-white,
+.theme-white-line-red-secondary .logo-red,
+.theme-red .logo-red,
+.theme-red-line-white-secondary .logo-white,
+.theme-red-line-white .logo-white {
+    display: block;
+}
+
+.theme-white-line-red-primary .logo-white,
+.theme-white-line-red .logo-white,
+.theme-white-line-red-secondary .logo-white,
+.theme-red .logo-white,
+.theme-red-line-white-secondary .logo-red,
+.theme-red-line-white .logo-red {
+    display: flex;
+}
+
+
+/* ----- /LOGO ----- */
+
+.full-card-white {
+    background-color: var(--east-white);
+    -webkit-box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+    height: 85vh;
+    margin: 15px;
+    margin-top: 30px;
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 0px solid #000000;
+    color: var(--ob-red);
+}
+
+.full-card-white .main-logo {
+    padding-top: 20px;
+    display: flex;
+}
+
+.full-card-white .logo-red {
+    display: flex;
+}
+
+.full-card-white .logo-white {
+    display: block;
+}
+
+.full-card-red {
+    background: rgba(210, 59, 56, 1);
+    background: -moz-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(210, 59, 56, 1)), color-stop(100%, rgba(255, 31, 53, 1)));
+    background: -webkit-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    background: -o-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    background: linear-gradient(to bottom, rgba(210, 59, 56, 1) 0%, rgba(255, 31, 53, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d23b38', endColorstr='#ff1f35', GradientType=0);
+    -webkit-box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+    height: 85vh;
+    margin: 15px;
+    margin-top: 30px;
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 0px solid #000000;
+    color: var(--ob-white);
+}
+
+.full-card-red .main-logo {
+    padding-top: 20px;
+    display: flex;
+}
+
+.full-card-red .logo-red {
+    display: block;
+}
+
+.full-card-red .logo-white {
+    display: flex;
+}
+
+
+/* --- 3. TRAVEL BUTTONS --- /////////////////////////////////*/
+
+.travel-type {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.6);
+    border-radius: 45px 45px 45px 45px;
+    -moz-border-radius: 45px 45px 45px 45px;
+    -webkit-border-radius: 45px 45px 45px 45px;
+    border: 0px solid #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.travel-type button {
+    padding-top: 4px;
+    font-family: 'Nexa';
+    font-weight: 400;
+    font-size: 16px;
+    width: 33.33%;
+    text-decoration: none;
+    outline: none;
+    border: 0px;
+    background-color: var(--ob-white);
+    height: 45px;
+    margin: -2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.travel-btn-left {
+    border-radius: 45px 0px 0px 45px;
+    -moz-border-radius: 45px 0px 0px 45px;
+    -webkit-border-radius: 45px 0px 0px 45px;
+    border: 0px solid #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.travel-btn-right {
+    border-radius: 0px 45px 45px 0px;
+    -moz-border-radius: 0px 45px 45px 0px;
+    -webkit-border-radius: 0px 45px 45px 0px;
+    border: 0px solid #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.travel-type .active {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: var(--ob-red);
+    color: var(--ob-white);
+    border: 3px solid #ffffff;
+}
+
+.travel-btn-left i {
+    margin-right: 4px;
+}
+
+.travel-btn-center i {
+    margin-right: 3px;
+}
+
+.travel-btn-right i {
+    margin-right: 5px;
+}
+
+
+/* ----- 4. SELECT ROUTES  ----- /////////////////////////////////////////*/
+
+.select-route-area {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.select-route-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 18px 18px 18px 18px;
+    -moz-border-radius: 18px 18px 18px 18px;
+    -webkit-border-radius: 18px 18px 18px 18px;
+    border: solid 1px #00000020;
+    background-color: var(--east-white);
+    -webkit-box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+}
+
+.route-select-item {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    align-content: left;
+    align-items: left;
+}
+
+.departure-select {
+    padding-top: 8px;
+}
+
+.arrival-select {
+    border-top: solid 1px #00000020;
+    padding-bottom: 8px;
+}
+
+.route-icon {
+    color: var(--ob-red-primary);
+    width: 30px;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-bottom: 7px;
+}
+
+.route-texts {
+    width: 80%;
+}
+
+.route-texts label {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ob-red-primary);
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.route-select-item input {
+    width: 100%;
+    font-family: 'Nexa';
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+    border: 0px;
+    height: 35px;
+}
+
+#journeyDepartureDate {
+    background-color: var(--ob-white);
+}
+
+.arrival-select .route-icon,
+.departure-select .route-icon {
+    margin-top: 10px;
+}
+
+.arrival-select .route-texts input,
+.departure-select .route-texts input {
+    height: 35px;
+}
+
+.departure-select .route-texts label {
+    margin-top: 5px;
+    display: block;
+}
+
+.departure-select .route-texts input {
+    margin-top: 5px;
+    display: block;
+}
+
+.arrival-select .route-texts label {
+    margin-top: 15px;
+    display: block;
+}
+
+
+/* --- 5. CHANGE STATIONS /////////////////////////////////////////////////*/
+
+.change-stations {
+    width: 100%;
+    text-align: right;
+    align-items: right;
+    align-content: right;
+    height: 10px;
+}
+
+.change-stations button {
+    right: 20px;
+    margin-top: -12px;
+    margin-bottom: -20px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+    border: solid 1px #00000020;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.change-stations button:hover {
+    color: var(--ob-red-primary);
+    background-color: var(--ob-white);
+}
+
+.change-stations button:active {
+    color: var(--ob-white);
+    background-color: var(--ob-red-secondary);
+}
+
+
+/* --- 6. DATE ---  */
+
+.date-route-area {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.date-route-card {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 12px;
+    border-radius: 18px 18px 18px 18px;
+    -moz-border-radius: 18px 18px 18px 18px;
+    -webkit-border-radius: 18px 18px 18px 18px;
+    border: solid 1px #00000020;
+    background-color: var(--east-white);
+    -webkit-box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+}
+
+.date-col {
+    padding-top: 8px;
+    display: flex;
+    width: 70%;
+    text-align: left;
+    align-content: left;
+    align-items: left;
+}
+
+.date-col .route-icon {
+    margin-top: 10px;
+}
+
+.date-col .route-texts label {
+    margin-top: 10px;
+    display: block;
+}
+
+.date-col .route-texts input {
+    margin-bottom: 5px;
+}
+
+.date-col input {
+    width: 100%;
+    font-family: 'Nexa';
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+    border: 0px;
+}
+
+.date-buttons-col {
+    display: block;
+    width: 5%;
+    padding-top: 10px;
+}
+
+.date-buttons-col button {
+    font-family: 'Nexa';
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 10px;
+    right: 45px;
+    width: 75px;
+    height: 30px;
+    outline: none;
+    text-decoration: none;
+    background-color: var(--ob-white);
+    border: solid 1px #00000020;
+    padding-top: 5px;
+}
+
+.today-btn {
+    margin-top: 2px;
+    border-radius: 16px 16px 0px 0px;
+    -moz-border-radius: 16px 16px 0px 0px;
+    -webkit-border-radius: 16px 16px 0px 0px;
+}
+
+.tomorrow-btn {
+    margin-top: -1px;
+    border-radius: 0px 0px 16px 16px;
+    -moz-border-radius: 0px 0px 16px 16px;
+    -webkit-border-radius: 0px 0px 16px 16px;
+}
+
+.date-buttons-col button:hover {
+    color: var(--ob-red-primary);
+    background-color: var(--ob-white);
+}
+
+.date-buttons-col button:active {
+    color: var(--ob-white);
+    background-color: var(--ob-red-secondary);
+}
+
+
+/* 7. TICKET BUTTON //////////////////////////////////////////////// */
+
+.find-ticket-area {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.find-ticket-area button {
+    height: 40px;
+    font-family: 'Nexa';
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0px 20px 0px 20px;
+    right: 45px;
+    width: 75px;
+    outline: none;
+    text-decoration: none;
+    background-color: var(--ob-red-primary);
+    color: var(--ob-white);
+    border: solid 1px #00000020;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    width: 100%;
+    margin-top: 2px;
+    border-radius: 16px 16px 16px 16px;
+    -moz-border-radius: 16px 16px 16px 16px;
+    -webkit-border-radius: 16px 16px 16px 16px;
+}
+
+.find-ticket-area button:hover {
+    background-color: var(--ob-red-secondary);
+}
+
+.find-ticket-area button:active {
+    background-color: var(--ob-red-secondary);
+    font-size: 17px;
+}
+
+.find-ticket-area button i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+
+/* --- 8. SEARCH --- //////////////////////////////////////////////////*/
+
+.search-area {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.search-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 18px 18px 18px 18px;
+    -moz-border-radius: 18px 18px 18px 18px;
+    -webkit-border-radius: 18px 18px 18px 18px;
+    border: solid 1px #00000020;
+    background-color: var(--east-white);
+    -webkit-box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.50);
+}
+
+.search-item {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    align-content: left;
+    align-items: left;
+}
+
+.search-item input {
+    width: 100%;
+    font-family: 'Nexa';
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+    border: 0px;
+}
+
+.search-icon {
+    color: var(--ob-red-primary);
+    width: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 7px;
+}
+
+.search-texts {
+    padding-top: 5px;
+    vertical-align: middle;
+    line-height: 40px;
+    width: 80%;
+}
+
+
+/* --- 9. TICKETS --- /////////////////////////////////////////////*/
+
+.ticket-card-area {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.ticket-card {
+    margin-top: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9px 9px 9px 9px;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border: solid 2px #00000020;
+    background-color: var(--ob-white);
+    color: #000000;
+}
+
+.ticket-head {
+    display: flex;
+    font-size: 12px;
+    background-color: var(--ob-red-primary);
+    color: var(--ob-white);
+    border-radius: 9px 9px 0px 0px;
+    -moz-border-radius: 9px 9px 0px 0px;
+    -webkit-border-radius: 9px 9px 0px 0px;
+}
+
+.ticket-head .left-col {
+    font-family: 'Nexa';
+    margin-top: 10px;
+    text-align: left;
+    width: 50%;
+    padding-left: 15px;
+}
+
+.ticket-head .right-col {
+    font-family: 'Nexa';
+    margin-top: 8px;
+    margin-bottom: 4px;
+    text-align: right;
+    width: 50%;
+    padding-right: 15px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ticket-body {
+    border-bottom: 1px dashed #00000050;
+    height: 100px;
+}
+
+.ticket-body {
+    height: 100px;
+}
+
+.ticket-comp {
+    padding-top: 5px;
+    width: 125px;
+}
+
+.ticket-go-arrow {
+    width: 60%;
+    margin: auto;
+    opacity: 0.50;
+}
+
+.ticket-stations-left {
+    width: 50%;
+    font-size: 18px;
+}
+
+.ticket-stations {
+    padding-top: 0px;
+    width: 100%;
+    display: flex;
+    margin-top: -30px;
+    font-family: 'Nexa';
+}
+
+.ticket-stations-right {
+    width: 50%;
+    font-size: 18px;
+}
+
+.ticket-footer {
+    padding-top: 0px;
+    width: 100%;
+    display: flex;
+    background-color: #ececec;
+    border-radius: 0px 0px 9px 9px;
+    -moz-border-radius: 0px 0px 9px 9px;
+    -webkit-border-radius: 0px 0px 9px 9px;
+    border: solid 0px #00000000;
+}
+
+.ticket-footer-left {
+    padding-top: 5px;
+    font-family: 'Nexa';
+    font-weight: 700;
+    color: #db0e0b;
+    font-size: 20px;
+    padding-left: 20px;
+    width: 50%;
+    text-align: left;
+}
+
+.ticket-footer-right {
+    padding-top: 6px;
+    font-family: 'Nexa';
+    font-size: 16px;
+    padding-right: 20px;
+    text-align: right;
+    width: 50%;
+}
+
+.tl {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ticket-marks {
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+
+/* --- 10. Back Button ///////////////////////////////////////////*/
+
+.back-area {
+    width: 95%;
+    padding-left: 15px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.back-page-button {
+    font-family: 'Nexa';
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    background-color: #ffffff00;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: solid 0px #ffffff00;
+    color: #414141;
+}
+
+.back-page-button:hover {
+    color: var(--ob-red-primary);
+}
+
+.back-page-button:active {
+    color: var(--ob-red-secondary);
+}
+
+
+/* --- 11. ALERT --- ////////////////////////////////////////////////////////////////////*/
+
+.alert-area {
+    width: 95%;
+    max-width: 95%;
+    margin: auto auto;
+    overflow: hidden;
+    position: fixed;
+    bottom: 10px;
+    padding: 10px;
+}
+
+.alert-item {
+    background-color: #32c8f4;
+    border-radius: 9px 9px 9px 9px;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border: 0px solid #000000;
+    padding: 10px;
+    display: flex;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.alert-item .alert-status {
+    width: 70px;
+}
+
+.alert-item h4 {
+    margin: 1px 1px 0px 1px;
+    padding: 1px 1px 0px 1px;
+}
+
+.alert-warning {
+    background-color: var(--east-warning);
+}
+
+.alert-service {
+    background-color: var(--east-service);
+}
+
+.alert-error {
+    background-color: var(--east-danger);
+}
+
+.alert-info {
+    background-color: var(--east-primary);
+}
+
+
+/* --- 12. Dropdown ////////////////////////////////////////////////////////////////*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: var(--ob-white);
+    color: var(--ob-red-primary);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: -25px;
+    font-weight: 700;
+    border-radius: 0px 0px 9px 9px;
+    -moz-border-radius: 0px 0px 9px 9px;
+    -webkit-border-radius: 0px 0px 9px 9px;
+    border: 0px solid #000000;
+}
+
+.dropdown input:hover .dropdown-content,
+.dropdown input:active .dropdown-content,
+.dropdown input:focus .dropdown-content,
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown input:focus .dropdown-content {
+    display: block;
+}
+
+.dropdown-content ul {
+    padding-left: 0px;
+    line-height: 30px;
+}
+.dropdown-content ul li {
+    padding: 0px;
+    padding-left: 15px;
+    text-decoration: none;
+    list-style: none;
+}
+.dropdown-content li:hover {
+    background-color: var(--ob-red-secondary);
+    color: var(--ob-white);
+}
+.dropdown-content li:active {
+    background-color: var(--ob-red-thirty);
+    color: var(--ob-white);
+    font-weight: 400;
+}
+#findTicketButton:disabled {
+background-color: var(--ob-red-passive);
+}
+#changeStationBtn {
+    z-index: 2;
+}

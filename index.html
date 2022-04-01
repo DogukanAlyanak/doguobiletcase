@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Bilet</title>
+
+    <link href="public/fonts/nexa/style.css" rel="stylesheet">
+    <link href="public/fonts/wixoricon/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+
+    <div class="loading-screen">
+        <div class="main-logo logo-center logo-white">
+            <img src="public/media/brand/obilet-logo-white.svg" alt="obilet">
+        </div>
+    </div>
+
+    <div class="theme-white-line-red-primary">
+        <div class="container">
+
+
+            <div class="main-logo logo-top logo-white">
+                <img src="public/media/brand/obilet-logo-white.svg" alt="obilet">
+            </div>
+
+            <div class="travel-type">
+                <button type="button" class="travel-btn-left active">
+                    <span class="travel-btn-text">
+                        <i class="wi-bus-simple"></i>
+                        Otobüs
+                    </span>
+                </button>
+                <button type="button" class="travel-btn-center">
+                    <span class="travel-btn-text">
+                        <i class="wi-plane-cross"></i>
+                        Uçak
+                    </span>
+                </button>
+                <button type="button" class="travel-btn-right ">
+                    <span class="travel-btn-text">
+                        <i class="wi-ferryboat"></i>
+                        Feribot
+                    </span>
+                </button>
+            </div>
+
+
+
+            <section class="section1">
+
+                <div class="select-route-area">
+                    <div class="select-route-card">
+
+
+                        <div class="departure-select route-select-item">
+                            <div class="route-icon">
+                                <i class="wi-location-dot"></i>
+                            </div>
+
+                            <div class="route-texts dropdown">
+                                <label for="">Kalkış</label>
+                                <input type="text" id="originInput" 
+                                    class="dropdown" 
+                                    placeholder="İstanbul - Esenler Otogarı">
+                                <div class="dropdown-content">
+                                    <ul id="dropdown-origin-content" style="display: none;"></ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="change-stations">
+                            <button type="button" id="changeStationBtn">
+                                    <i class="wi-arrow-down-up"></i></button>
+                        </div>
+
+
+                        <div class="arrival-select route-select-item">
+                            <div class="route-icon">
+                                <i class="wi-location"></i>
+                            </div>
+
+                            <div class="route-texts dropdown">
+                                <label for="">Varış</label>
+                                <input type="text" id="destinationInput" 
+                                    class="dropdown" 
+                                    placeholder="Ankara - Aşti Otogarı">
+                                <div class="dropdown-content">
+                                    <ul id="dropdown-destination-content" style="display: none;"></ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="date-route-area">
+                    <div class="date-route-card">
+
+
+                        <div class="date-col">
+                            <div class="route-icon">
+                                <i class="wi-calendar-bold"></i>
+                            </div>
+
+                            <div class="route-texts">
+                                <label for="">Gidiş Tarihi</label>
+                                <input type="date" id="journeyDepartureDate" class="">
+                            </div>
+
+                        </div>
+                        <div class="date-buttons-col">
+                            <button type="button" id="todayJourneyBtn" class="today-btn"> Bugün</button>
+                            <button type="button" id="tomorrowJourneyBtn" class="tomorrow-btn"> Yarın</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="find-ticket-area">
+                    <button type="button" id="findTicketButton" disabled>
+                        <i class="wi-search"></i>
+                        Bilet Bul
+                    </button>
+                </div>
+            </section>
+
+
+
+
+            <section class="section2" style="display: none;">
+                <div class="back-area">
+                    <button type="button" class="back-page-button" id="backPageButton">
+                    <i class="wi-arrow-left"></i> 
+                        Geri
+                    </button>
+                </div>
+
+
+                <div class="ticket-card-area" id="journeyList">
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+    <div class="alert-area"></div>
+
+    <script src="/public/js/script.js"></script>
+</body>
+
+</html>
